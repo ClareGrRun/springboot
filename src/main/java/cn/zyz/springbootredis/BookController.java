@@ -16,7 +16,7 @@ public class BookController {
 
     @GetMapping("/test1")
     public void test1(){
-        ValueOperations<String,String> ops1 = stringRedisTemplate.opsForValue();
+       ValueOperations<String,String> ops1 = stringRedisTemplate.opsForValue();
         ops1.set("name","三国演义");
         String name = ops1.get("name");
         System.out.println(name);

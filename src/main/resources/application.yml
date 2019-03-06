@@ -1,0 +1,16 @@
+spring:
+  redis:
+    cluster:
+      ports:
+        - 7001
+        - 7002
+        - 7003
+        - 7004
+        - 7005
+        - 7006
+      host: 192.168.15.128
+      poolConfig:
+        max-total: 6
+        max_idle: 6
+        max-wait-millis: -1
+        min-idle: 0
